@@ -1,0 +1,443 @@
+.cardForm {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.cardContainer {
+  width: 30%;
+  min-height: 100vh;
+  background-color: #2a234f;
+}
+
+.dataContainer {
+  width: 70%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 270px;
+  height: 150px;
+}
+
+.cardFrontSide {
+  position: absolute;
+  left: 12%;
+  top: 20%;
+}
+
+.cardBackSide {
+  position: absolute;
+  left: 15%;
+  top: 55%;
+}
+
+.cardBigCircle {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 22%;
+  left: 13%;
+}
+
+.cardSmallCircle {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 23%;
+  left: 16%;
+}
+
+.onCardNumber {
+  color: white;
+  position: absolute;
+  top: 33%;
+  left: 13%;
+}
+
+.clientOnCard {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 13%;
+}
+
+.cardDateOnCard {
+  color: white;
+  position: absolute;
+  top: 23%;
+  left: 30%;
+}
+
+.cvvOnCard {
+  color: white;
+  position: absolute;
+  top: 66.3%;
+  left: 32%;
+}
+
+label {
+  color: #21092f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.labelContainer {
+  margin-top: 10px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  padding-left: 7px;
+}
+
+.longInput {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  margin-bottom: 0;
+}
+
+.longInputError {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid red;
+  margin-bottom: 0;
+}
+
+.dateDisplay {
+  display: flex;
+}
+
+.cvvLabel {
+  margin-left: 20px;
+}
+
+.dateInput {
+  width: 50px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  margin-bottom: 0;
+}
+
+.dateInputError {
+  width: 50px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid red;
+  margin-bottom: 0;
+}
+
+.cvvInput {
+  width: 120px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.cvvInputError {
+  width: 120px;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid red;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.yearInput {
+  margin-left: 10px;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #21092f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #6118b4;
+  transition: 1s;
+}
+
+.cardNumberErrorMessage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notBlank,
+.cardNumberNotAllDigits,
+.ivalidDate,
+.cvvNotAllDigits {
+  color: red;
+  font-size: smaller;
+}
+
+.cvvNotAllDigits {
+  margin-left: 20px;
+}
+
+.resultContainer {
+  text-align: center;
+  width: 36.2%;
+}
+
+.resultChildContainer {
+  margin-top: 50px;
+}
+
+.resultChildContainer p {
+  color: gray;
+  margin-top: 20px;
+}
+
+.iconContainer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #6118b4;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    width: 0%;
+  }
+
+  .dataContainer {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .dataChildContainer {
+    margin-top: 200px;
+  }
+
+  .resultContainer {
+    margin-top: 200px;
+  }
+
+  img {
+    width: 250px;
+    height: 150px;
+  }
+
+  .cardBackSide {
+    left: 45%;
+    top: 5%;
+  }
+
+  .cardFrontSide {
+    left: 10%;
+    top: 13%;
+  }
+
+  .cardBigCircle {
+    top: 15%;
+    left: 12%;
+  }
+
+  .cardSmallCircle {
+    top: 16%;
+    left: 18%;
+  }
+
+  .onCardNumber {
+    top: 26%;
+    left: 12%;
+  }
+
+  .clientOnCard {
+    top: 33%;
+    left: 12%;
+  }
+
+  .cardDateOnCard {
+    top: 16%;
+    left: 45%;
+  }
+
+  .cvvOnCard {
+    top: 16.5%;
+    left: 78%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .cardContainer {
+    width: 0%;
+  }
+
+  .dataContainer {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .dataChildContainer {
+    margin-top: 200px;
+  }
+
+  .resultContainer {
+    margin-top: 200px;
+  }
+
+  img {
+    width: 270px;
+    height: 150px;
+  }
+
+  .cardBackSide {
+    left: 48%;
+    top: 5%;
+  }
+
+  .cardFrontSide {
+    left: 20%;
+    top: 13.3%;
+  }
+
+  .cardBigCircle {
+    top: 15%;
+    left: 22%;
+  }
+
+  .cardSmallCircle {
+    top: 16%;
+    left: 26.5%;
+  }
+
+  .onCardNumber {
+    top: 26%;
+    left: 22%;
+  }
+
+  .clientOnCard {
+    top: 33%;
+    left: 22%;
+  }
+
+  .cardDateOnCard {
+    top: 16%;
+    left: 49%;
+  }
+
+  .cvvOnCard {
+    top: 16.5%;
+    left: 74%;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .cardFrontSide {
+    left: 7%;
+    top: 20%;
+  }
+
+  .cardBackSide {
+    left: 11%;
+    top: 55%;
+  }
+
+  .cardBigCircle {
+    top: 22%;
+    left: 9%;
+  }
+
+  .cardSmallCircle {
+    top: 23%;
+    left: 13%;
+  }
+
+  .onCardNumber {
+    top: 33%;
+    left: 9%;
+  }
+
+  .clientOnCard {
+    top: 40%;
+    left: 9%;
+  }
+
+  .cardDateOnCard {
+    top: 23%;
+    left: 29%;
+  }
+
+  .cvvOnCard {
+    color: white;
+    position: absolute;
+    top: 66.3%;
+    left: 32.5%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .cardFrontSide {
+    left: 7%;
+    top: 20%;
+  }
+
+  .cardBackSide {
+    left: 11%;
+    top: 55%;
+  }
+
+  .cardBigCircle {
+    top: 22%;
+    left: 9%;
+  }
+
+  .cardSmallCircle {
+    top: 23%;
+    left: 13%;
+  }
+
+  .onCardNumber {
+    top: 33%;
+    left: 9%;
+  }
+
+  .clientOnCard {
+    top: 40%;
+    left: 9%;
+  }
+
+  .cardDateOnCard {
+    top: 23%;
+    left: 29%;
+  }
+
+  .cvvOnCard {
+    color: white;
+    position: absolute;
+    top: 66.3%;
+    left: 32.5%;
+  }
+}
+
