@@ -1,1 +1,1 @@
-# interactive-credit-card
+this project is a credit card form. The form has validation logic for various fields such as card number, CVC, expiration date, and cardholder name. Additionally, there's a conditional rendering based on whether the form has been submitted or not.
