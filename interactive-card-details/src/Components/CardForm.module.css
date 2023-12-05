@@ -73,14 +73,14 @@ img {
   color: white;
   position: absolute;
   top: 23%;
-  left: 30%;
+  left: 28%;
 }
 
 .cvvOnCard {
   color: white;
   position: absolute;
-  top: 66.3%;
-  left: 32%;
+  top: 65.5%;
+  left: 30.5%;
 }
 
 label {
@@ -282,7 +282,7 @@ button:hover {
   }
 
   .cvvOnCard {
-    top: 16.5%;
+    top: 15.6%;
     left: 78%;
   }
 }
@@ -347,8 +347,8 @@ button:hover {
   }
 
   .cvvOnCard {
-    top: 16.5%;
-    left: 74%;
+    top: 15.5%;
+    left: 76%;
   }
 }
 
@@ -390,54 +390,18 @@ button:hover {
   }
 
   .cvvOnCard {
-    color: white;
-    position: absolute;
-    top: 66.3%;
+    top: 65.3%;
     left: 32.5%;
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .cardFrontSide {
-    left: 7%;
-    top: 20%;
-  }
-
-  .cardBackSide {
-    left: 11%;
-    top: 55%;
-  }
-
-  .cardBigCircle {
-    top: 22%;
-    left: 9%;
-  }
-
-  .cardSmallCircle {
-    top: 23%;
-    left: 13%;
-  }
-
-  .onCardNumber {
-    top: 33%;
-    left: 9%;
-  }
-
-  .clientOnCard {
-    top: 40%;
-    left: 9%;
-  }
-
+@media only screen and (min-width: 993px) and (max-width: 1115px) {
   .cardDateOnCard {
-    top: 23%;
-    left: 29%;
+    left: 32%;
   }
 
   .cvvOnCard {
-    color: white;
-    position: absolute;
-    top: 66.3%;
-    left: 32.5%;
+    left: 34.5%;
   }
 }
 
